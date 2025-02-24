@@ -45,6 +45,11 @@ body {
 	transition: all 0.4s ease;
 }
 
+.btn.active {
+	background-color: #000;
+	color: #fff;
+}
+
 .btn:hover {
 	background-color: #000;
 	color: #fff;
@@ -126,6 +131,10 @@ body {
 	justify-content: center;
 }
 
+.main-content {
+	padding-bottom: 100px;
+}
+
 /* HERO STRAT */
 .hero {
 	padding-top: 40px;
@@ -174,10 +183,79 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 .hero-item:not(:last-child) {
 	margin-right: 20px;
 }
 
+.hero-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-inner-item {
+	max-width: 410px;
+	width: 100%;
+	text-align: left;
+}
+
+.hero-inner-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.hero-inner-img {
+	width: 410px;
+	height: 410px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.hero-inner-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 0%;
+	margin-bottom: 20px;
+}
+
+.hero-inner-text {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 0%;
+	margin-bottom: 20px;
+}
+
+time {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
 /* HERO END */
+
+/* FOOTER START */
+.site-footer {
+	background-color: #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.site-footer-container {
+	display: flex;
+	align-items: center;
+}
+
+.site-footer-left {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	margin-right: auto;
+}
+
+.site-footer-left img {
+	margin-right: 14px;
+}
+/* FOOTER END */
